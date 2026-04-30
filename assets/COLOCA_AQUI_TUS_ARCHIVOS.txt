@@ -1,0 +1,24 @@
+CARPETA DE ASSETS — Granada De Dulce
+=====================================
+
+VÍDEO (efecto scroll fotograma a fotograma):
+  → Guarda el vídeo como: hero.mp4
+  → Ruta: assets/hero.mp4
+  → En cuanto lo coloques aquí, el efecto Apple se activa automáticamente.
+     La sección hero se ancla y el vídeo avanza con el scroll.
+  → Recomendado: vídeo corto (8-20 segundos), resolución 1920×1080 o superior.
+
+FOTOS DE PRODUCTOS:
+  → Coloca tus fotos reales aquí y reemplaza los gradientes de color en el HTML.
+  → En index.html, sección #productos, cambia el div .producto-img por:
+     <img src="assets/nombre-foto.jpg" alt="Nombre del producto">
+
+FOTO CATERING:
+  → Guarda como: assets/catering.jpg
+  → En index.html, sección #catering, reemplaza .catering-placeholder por:
+     <img src="assets/catering.jpg" alt="Catering Granada De Dulce">
+
+FOTOS GALERÍA:
+  → Para añadir fotos reales a la galería, en index.html sección #galeria,
+     reemplaza los div con style="background:..." por:
+     <img src="assets/galeria-1.jpg" alt="...">

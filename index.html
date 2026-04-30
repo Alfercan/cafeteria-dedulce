@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cafetería De Dulce en Monachil, Granada. Pastelería artesanal con los métodos tradicionales adaptados a los gustos de hoy.">
+  <title>Cafetería De Dulce · Granada De Dulce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loading">
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-content">
+      <p class="loader-brand">Granada De Dulce</p>
+      <div class="loader-line"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/logo.png" alt="Granada De Dulce" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#filosofia">Nosotros</a></li>
+      <li><a href="#productos">Carta</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#nuestra-cafeteria">Cafetería</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="tel:958301855" class="nav-tel">958 301 855</a>
+    <button id="burger" class="burger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div id="hero-fallback" class="hero-fallback"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-location">Monachil · Granada</span>
+      <h1 class="hero-title">
+        <span class="hero-line">Cafetería</span>
+        <em class="hero-line hero-line-italic">De Dulce</em>
+      </h1>
+      <p class="hero-sub">Artesanía dulce desde el corazón de Granada</p>
+      <a href="#filosofia" class="hero-btn">Descubrir</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── FILOSOFÍA ── -->
+  <section id="filosofia" class="section">
+    <div class="container">
+      <div class="filosofia-wrap">
+        <div class="filosofia-label">Nuestra historia</div>
+        <blockquote class="filosofia-quote">
+          <span>Productos elaborados</span>
+          <span>con métodos tradicionales</span>
+          <span>adaptados a los gustos de hoy</span>
+        </blockquote>
+        <div class="filosofia-text">
+          <p>En Granada De Dulce llevamos años creando dulces artesanales que combinan las recetas de siempre con los sabores más actuales. Nuestro obrador en Monachil es el corazón de todo lo que hacemos.</p>
+          <p>La Cafetería De Dulce es el lugar donde puedes disfrutar de nuestras creaciones en un ambiente cálido y acogedor, en el Barrio de la Vega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTOS ── -->
+  <section id="productos" class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Carta</span>
+        <h2>Nuestra pastelería</h2>
+        <p>Elaborada artesanalmente en nuestro obrador de Monachil</p>
+      </div>
+
+      <!-- Pestañas de categorías -->
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn active" data-tab="tradicionales" role="tab">Tradicionales</button>
+        <button class="tab-btn" data-tab="semifrios" role="tab">Semifríos</button>
+        <button class="tab-btn" data-tab="planchas" role="tab">Planchas &amp; Tartas</button>
+        <button class="tab-btn" data-tab="bandejas" role="tab">Bandejas</button>
+        <button class="tab-btn" data-tab="vasitos" role="tab">Vasitos</button>
+        <button class="tab-btn" data-tab="tartas" role="tab">Tartas</button>
+        <button class="tab-btn" data-tab="temporada" role="tab">Temporada</button>
+      </div>
+
+      <div class="tabs-content">
+
+        <!-- ·· TRADICIONALES ·· -->
+        <div class="tab-panel active" id="tab-tradicionales">
+          <div class="productos-grid">
+
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-1.jpg" alt="Barquillo" loading="lazy"></div><div class="producto-body"><h3>Barquillo</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-2.jpg" alt="Manta de Coco" loading="lazy"></div><div class="producto-body"><h3>Manta de Coco</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-3.jpg" alt="Milhoja Blanca" loading="lazy"></div><div class="producto-body"><h3>Milhoja Blanca</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-4.jpg" alt="Milhoja Canela" loading="lazy"></div><div class="producto-body"><h3>Milhoja Canela</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-5.jpg" alt="Milhoja Chocolate" loading="lazy"></div><div class="producto-body"><h3>Milhoja Chocolate</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-6.jpg" alt="Petisú Blanco" loading="lazy"></div><div class="producto-body"><h3>Petisú Blanco</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-7.jpg" alt="Petisú Chocolate" loading="lazy"></div><div class="producto-body"><h3>Petisú Chocolate</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-8.jpg" alt="Pionono" loading="lazy"></div><div class="producto-body"><h3>Pionono</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-9.jpg" alt="Pionono Chocolate" loading="lazy"></div><div class="producto-body"><h3>Pionono Chocolate</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-10.jpg" alt="Rosco de Nata" loading="lazy"></div><div class="producto-body"><h3>Rosco de Nata</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/trad-11.jpg" alt="Royal" loading="lazy"></div><div class="producto-body"><h3>Royal</h3></div></article>
+          </div>
+        </div>
+
+        <!-- ·· SEMIFRÍOS ·· -->
+        <div class="tab-panel" id="tab-semifrios">
+          <div class="productos-grid">
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-1.jpg" alt="Fantasía de Avellana" loading="lazy"></div><div class="producto-body"><h3>Fantasía de Avellana</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-2.jpg" alt="Geometría Bombón" loading="lazy"></div><div class="producto-body"><h3>Geometría Bombón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-3.jpg" alt="Geometría Bombón de Oro" loading="lazy"></div><div class="producto-body"><h3>Geometría Bombón de Oro</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-4.jpg" alt="Geometría Choco Mango" loading="lazy"></div><div class="producto-body"><h3>Geometría Choco Mango</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-5.jpg" alt="Geometría Frambuesa" loading="lazy"></div><div class="producto-body"><h3>Geometría Frambuesa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-6.jpg" alt="Geometría Queso y Arándanos" loading="lazy"></div><div class="producto-body"><h3>Geometría Queso y Arándanos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-7.jpg" alt="Geometría Yogur Kéfir y Limón" loading="lazy"></div><div class="producto-body"><h3>Geometría Yogur Kéfir y Limón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-8.jpg" alt="Imperial Mandarina" loading="lazy"></div><div class="producto-body"><h3>Imperial Mandarina</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-9.jpg" alt="Lingote Bombón" loading="lazy"></div><div class="producto-body"><h3>Lingote Bombón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-10.jpg" alt="Lingote Choco Blanco y Frambuesa" loading="lazy"></div><div class="producto-body"><h3>Lingote Choco Blanco y Frambuesa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-11.jpg" alt="Lingote Choco Blanco y Mango" loading="lazy"></div><div class="producto-body"><h3>Lingote Choco Blanco y Mango</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-12.jpg" alt="Lingote de Cocoa" loading="lazy"></div><div class="producto-body"><h3>Lingote de Cocoa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-13.jpg" alt="Tarta Pionono" loading="lazy"></div><div class="producto-body"><h3>Tarta Pionono</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-14.jpg" alt="Rosa de Pasión" loading="lazy"></div><div class="producto-body"><h3>Rosa de Pasión</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-15.jpg" alt="Rosa Nevada" loading="lazy"></div><div class="producto-body"><h3>Rosa Nevada</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-16.jpg" alt="Semiesfera Cava y Limón" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Cava y Limón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-17.jpg" alt="Semiesfera Choco Blanco y Frambuesa" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Choco Blanco y Frambuesa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-18.jpg" alt="Semiesfera Choco Blanco y Mango" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Choco Blanco y Mango</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-19.jpg" alt="Semiesfera Coulant Chocolate" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Coulant Chocolate</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-20.jpg" alt="Semiesfera Mango y Chirimoya" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Mango y Chirimoya</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-21.jpg" alt="Semiesfera Rocher" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Rocher</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-22.jpg" alt="Semiesfera Turrón Toffee" loading="lazy"></div><div class="producto-body"><h3>Semiesfera Turrón Toffee</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-23.jpg" alt="Soufflé" loading="lazy"></div><div class="producto-body"><h3>Soufflé</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-24.jpg" alt="Timbal Café Irlandés" loading="lazy"></div><div class="producto-body"><h3>Timbal Café Irlandés</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-25.jpg" alt="Timbal de Yogur" loading="lazy"></div><div class="producto-body"><h3>Timbal de Yogur</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-26.jpg" alt="Timbal Mousse de Limón" loading="lazy"></div><div class="producto-body"><h3>Timbal Mousse de Limón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-27.jpg" alt="Timbal Queso con Frambuesa" loading="lazy"></div><div class="producto-body"><h3>Timbal Queso con Frambuesa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-28.jpg" alt="Timbal San Marcos" loading="lazy"></div><div class="producto-body"><h3>Timbal San Marcos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-29.jpg" alt="Timbal Tiramisú" loading="lazy"></div><div class="producto-body"><h3>Timbal Tiramisú</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-30.jpg" alt="Timbal Tres Chocolates" loading="lazy"></div><div class="producto-body"><h3>Timbal Tres Chocolates</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/sf-31.jpg" alt="Timbal Turrón" loading="lazy"></div><div class="producto-body"><h3>Timbal Turrón</h3></div></article>
+          </div>
+        </div>
+
+        <!-- ·· PLANCHAS & TARTAS ·· -->
+        <div class="tab-panel" id="tab-planchas">
+          <div class="productos-grid">
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-1.jpg" alt="Plancha Crema Catalana" loading="lazy"></div><div class="producto-body"><h3>Plancha Crema Catalana</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-2.jpg" alt="Plancha Nata y Galleta" loading="lazy"></div><div class="producto-body"><h3>Plancha Nata y Galleta</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-3.jpg" alt="Plancha Queso y Arándanos" loading="lazy"></div><div class="producto-body"><h3>Plancha Queso y Arándanos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-4.jpg" alt="Plancha Tiramisú" loading="lazy"></div><div class="producto-body"><h3>Plancha Tiramisú</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-5.jpg" alt="Plancha Trufa" loading="lazy"></div><div class="producto-body"><h3>Plancha Trufa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-6.jpg" alt="Plancha Turrón" loading="lazy"></div><div class="producto-body"><h3>Plancha Turrón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-7.jpg" alt="Plancha San Marcos" loading="lazy"></div><div class="producto-body"><h3>Plancha San Marcos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-8.jpg" alt="Plancha Selva Negra" loading="lazy"></div><div class="producto-body"><h3>Plancha Selva Negra</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/pl-9.jpg" alt="Plancha Tres Chocolates" loading="lazy"></div><div class="producto-body"><h3>Plancha Tres Chocolates</h3></div></article>
+          </div>
+        </div>
+
+        <!-- ·· BANDEJAS ·· -->
+        <div class="tab-panel" id="tab-bandejas">
+          <div class="productos-grid">
+            <article class="producto"><div class="producto-img"><img src="assets/productos/bj-1.jpg" alt="Bandeja Mini Piononos" loading="lazy"></div><div class="producto-body"><h3>Bandeja Mini Piononos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/bj-2.jpg" alt="Bandeja Pastelitos Surtidos" loading="lazy"></div><div class="producto-body"><h3>Bandeja Pastelitos Surtidos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/bj-3.jpg" alt="Bandeja Repostería Surtida" loading="lazy"></div><div class="producto-body"><h3>Bandeja Repostería Surtida</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/bj-4.jpg" alt="Bandeja Surtido de Semifríos" loading="lazy"></div><div class="producto-body"><h3>Bandeja Surtido de Semifríos</h3></div></article>
+          </div>
+        </div>
+
+        <!-- ·· VASITOS ·· -->
+        <div class="tab-panel" id="tab-vasitos">
+          <div class="productos-grid">
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-1.jpg" alt="Vasito Choco Blanco y Frambuesa" loading="lazy"></div><div class="producto-body"><h3>Vasito Choco Blanco y Frambuesa</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-2.jpg" alt="Vasito Choco Blanco y Mango" loading="lazy"></div><div class="producto-body"><h3>Vasito Choco Blanco y Mango</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-3.jpg" alt="Vasito de Bombón" loading="lazy"></div><div class="producto-body"><h3>Vasito de Bombón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-4.jpg" alt="Vasito de Turrón" loading="lazy"></div><div class="producto-body"><h3>Vasito de Turrón</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-5.jpg" alt="Vasito Queso y Arándanos" loading="lazy"></div><div class="producto-body"><h3>Vasito Queso y Arándanos</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-6.jpg" alt="Vasito Selva Negra" loading="lazy"></div><div class="producto-body"><h3>Vasito Selva Negra</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-7.jpg" alt="Vasito Tres Chocolates" loading="lazy"></div><div class="producto-body"><h3>Vasito Tres Chocolates</h3></div></article>
+            <article class="producto"><div class="producto-img"><img src="assets/productos/vs-8.jpg" alt="Vasito Yogur con Pionono" loading="lazy"></div><div class="producto-body"><h3>Vasito Yogur con Pionono</h3></div></article>
+          </div>
+        </div>
+
+        <!-- ·· TARTAS ·· -->
+        <div class="tab-panel" id="tab-tartas">
+          <div class="subcat">
+            <button class="subcat-btn active" data-subcat="tartas-heladas">
+              <div class="subcat-thumb"><img src="assets/productos/th-1.jpg" alt="Tartas Heladas"></div>
+              <span class="subcat-name">Tartas Heladas</span>
+              <span class="subcat-count">4 productos</span>
+              <svg class="subcat-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="subcat-panel open" id="subcat-tartas-heladas">
+              <div class="productos-grid">
+                <article class="producto"><div class="producto-img"><img src="assets/productos/th-1.jpg" alt="Tarta Helada de Avellana" loading="lazy"></div><div class="producto-body"><h3>Tarta Helada de Avellana</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/th-2.jpg" alt="Tarta Helada de Whisky" loading="lazy"></div><div class="producto-body"><h3>Tarta Helada de Whisky</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/th-3.jpg" alt="Tarta Helada Leche Merengada" loading="lazy"></div><div class="producto-body"><h3>Tarta Helada Leche Merengada</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/th-4.jpg" alt="Tarta Helada Nougat Higos y Nueces" loading="lazy"></div><div class="producto-body"><h3>Tarta Helada Nougat Higos y Nueces</h3></div></article>
+              </div>
+            </div>
+          </div>
+          <div class="subcat">
+            <button class="subcat-btn" data-subcat="tartas-porcionadas">
+              <div class="subcat-thumb"><img src="assets/productos/tp-9.jpg" alt="Tartas Porcionadas"></div>
+              <span class="subcat-name">Tartas Porcionadas</span>
+              <span class="subcat-count">17 productos</span>
+              <svg class="subcat-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="subcat-panel" id="subcat-tartas-porcionadas">
+              <div class="productos-grid">
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-1.jpg" alt="Tarta Americana" loading="lazy"></div><div class="producto-body"><h3>Tarta Americana</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-2.jpg" alt="Tarta Caramelo" loading="lazy"></div><div class="producto-body"><h3>Tarta Caramelo</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-3.jpg" alt="Tarta Crema Catalana" loading="lazy"></div><div class="producto-body"><h3>Tarta Crema Catalana</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-4.jpg" alt="Tarta de Manzana" loading="lazy"></div><div class="producto-body"><h3>Tarta de Manzana</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-5.jpg" alt="Tarta de Turrón" loading="lazy"></div><div class="producto-body"><h3>Tarta de Turrón</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-6.jpg" alt="Tarta Galletas María" loading="lazy"></div><div class="producto-body"><h3>Tarta Galletas María</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-7.jpg" alt="Tarta Kinder" loading="lazy"></div><div class="producto-body"><h3>Tarta Kinder</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-8.jpg" alt="Tarta Kit Kat" loading="lazy"></div><div class="producto-body"><h3>Tarta Kit Kat</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-9.jpg" alt="Tarta Muerte por Chocolate" loading="lazy"></div><div class="producto-body"><h3>Tarta Muerte por Chocolate</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-10.jpg" alt="Tarta Oreo" loading="lazy"></div><div class="producto-body"><h3>Tarta Oreo</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-11.jpg" alt="Tarta Piononos" loading="lazy"></div><div class="producto-body"><h3>Tarta Piononos</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-12.jpg" alt="Tarta Queso y Arándanos" loading="lazy"></div><div class="producto-body"><h3>Tarta Queso y Arándanos</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-13.jpg" alt="Tarta Red Velvet" loading="lazy"></div><div class="producto-body"><h3>Tarta Red Velvet</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-14.jpg" alt="Tarta Sacher" loading="lazy"></div><div class="producto-body"><h3>Tarta Sacher</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-15.jpg" alt="Tarta Tiramisú" loading="lazy"></div><div class="producto-body"><h3>Tarta Tiramisú</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-16.jpg" alt="Tarta Tres Chocolates" loading="lazy"></div><div class="producto-body"><h3>Tarta Tres Chocolates</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/tp-17.jpg" alt="Tarta Zanahoria" loading="lazy"></div><div class="producto-body"><h3>Tarta Zanahoria</h3></div></article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ·· TEMPORADA ·· -->
+        <div class="tab-panel" id="tab-temporada">
+          <div class="subcat">
+            <button class="subcat-btn active" data-subcat="carnaval">
+              <div class="subcat-thumb"><img src="assets/productos/carn-1.jpg" alt="Carnaval"></div>
+              <span class="subcat-name">Carnaval</span>
+              <span class="subcat-count">2 productos</span>
+              <svg class="subcat-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="subcat-panel open" id="subcat-carnaval">
+              <div class="productos-grid">
+                <article class="producto"><div class="producto-img"><img src="assets/productos/carn-1.jpg" alt="Cuajada Carnaval Familiar" loading="lazy"></div><div class="producto-body"><h3>Cuajada Carnaval Familiar</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/carn-2.jpg" alt="Cuajada Carnaval Individual" loading="lazy"></div><div class="producto-body"><h3>Cuajada Carnaval Individual</h3></div></article>
+              </div>
+            </div>
+          </div>
+          <div class="subcat">
+            <button class="subcat-btn" data-subcat="semana-santa">
+              <div class="subcat-thumb"><img src="assets/productos/ss-13.jpg" alt="Semana Santa"></div>
+              <span class="subcat-name">Semana Santa</span>
+              <span class="subcat-count">13 productos</span>
+              <svg class="subcat-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="subcat-panel" id="subcat-semana-santa">
+              <div class="productos-grid">
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-1.jpg" alt="Buñuelos Chocolate" loading="lazy"></div><div class="producto-body"><h3>Buñuelos Chocolate</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-2.jpg" alt="Buñuelos Crema" loading="lazy"></div><div class="producto-body"><h3>Buñuelos Crema</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-3.jpg" alt="Buñuelos Nata" loading="lazy"></div><div class="producto-body"><h3>Buñuelos Nata</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-4.jpg" alt="Galletas Chocolate" loading="lazy"></div><div class="producto-body"><h3>Galletas Chocolate</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-5.jpg" alt="Galletas Chocolate Blanco" loading="lazy"></div><div class="producto-body"><h3>Galletas Chocolate Blanco</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-6.jpg" alt="Galletas con Azúcar" loading="lazy"></div><div class="producto-body"><h3>Galletas con Azúcar</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-7.jpg" alt="Galletas de Coco" loading="lazy"></div><div class="producto-body"><h3>Galletas de Coco</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-8.jpg" alt="Leche Frita" loading="lazy"></div><div class="producto-body"><h3>Leche Frita</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-9.jpg" alt="Mini Pestiños con Azúcar" loading="lazy"></div><div class="producto-body"><h3>Mini Pestiños con Azúcar</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-10.jpg" alt="Mini Pestiños Melados" loading="lazy"></div><div class="producto-body"><h3>Mini Pestiños Melados</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-11.jpg" alt="Pestiños con Azúcar" loading="lazy"></div><div class="producto-body"><h3>Pestiños con Azúcar</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-12.jpg" alt="Roscos Fritos" loading="lazy"></div><div class="producto-body"><h3>Roscos Fritos</h3></div></article>
+                <article class="producto"><div class="producto-img"><img src="assets/productos/ss-13.jpg" alt="Torrijas" loading="lazy"></div><div class="producto-body"><h3>Torrijas</h3></div></article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tabs-content -->
+    </div>
+  </section>
+
+  <!-- ── CATERING ── -->
+  <section id="catering" class="section section-dark">
+    <div class="catering-bg"></div>
+    <div class="container">
+      <div class="catering-inner">
+        <div class="catering-text">
+          <span class="tag tag-light">Eventos</span>
+          <h2>Catering para<br>tus momentos<br>especiales</h2>
+          <p>Llevamos la dulzura artesanal de Granada De Dulce a donde tú la necesites: cumpleaños, bodas, comuniones y eventos de empresa.</p>
+          <ul class="catering-list">
+            <li><span class="c-icon">🎂</span> Cumpleaños y aniversarios</li>
+            <li><span class="c-icon">💍</span> Bodas y bautizos</li>
+            <li><span class="c-icon">✨</span> Comuniones</li>
+            <li><span class="c-icon">🏢</span> Eventos de empresa</li>
+          </ul>
+          <a href="tel:958501118" class="btn-light">Pedir presupuesto · 958 501 118</a>
+        </div>
+        <div class="catering-visual">
+          <img src="assets/catering.jpg" alt="Catering Granada De Dulce" class="catering-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── NUESTRA CAFETERÍA ── -->
+  <section id="nuestra-cafeteria" class="section section-light">
+    <div class="container">
+
+      <div class="section-head" data-anim="fade-up">
+        <span class="tag">El local</span>
+        <h2>Nuestra Cafetería</h2>
+        <p>Un espacio cálido donde disfrutar de nuestra pastelería artesanal</p>
+      </div>
+
+      <div class="cafe-layout">
+
+        <!-- Mosaico de fotos -->
+        <div class="cafe-mosaic" data-anim="fade-up">
+          <div class="cafe-mosaic-main">
+            <img src="assets/cafe-exterior.jpg" alt="Cafetería De Dulce Monachil">
+          </div>
+          <div class="cafe-mosaic-grid">
+            <img src="assets/cafe-desayuno.jpg"  alt="Desayuno en Cafetería De Dulce">
+            <img src="assets/cafe-vitrina1.jpg"  alt="Vitrina de tartas">
+            <img src="assets/cafe-vitrina2.jpg"  alt="Vitrina de tartas artesanales">
+            <img src="assets/cafe-semifrios.jpg" alt="Postres semifríos">
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="cafe-info" data-anim="fade-up">
+          <p class="cafe-desc">La Cafetería De Dulce es el lugar donde puedes disfrutar de todo lo que elaboramos en nuestro obrador de Monachil. Un ambiente acogedor para tomar el mejor café acompañado de nuestros dulces artesanales, desayunar con una tostada de jamón o simplemente dejarte tentar por nuestra vitrina.</p>
+
+          <div class="cafe-facts">
+            <div class="cafe-fact">
+              <span class="cafe-fact-icon">📍</span>
+              <div>
+                <strong>Dónde estamos</strong>
+                <span>C/ Madrid, 36 · Barrio de la Vega</span>
+                <span>18193 Monachil, Granada</span>
+              </div>
+            </div>
+            <div class="cafe-fact">
+              <span class="cafe-fact-icon">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <a href="tel:958301855">958 301 855</a>
+              </div>
+            </div>
+            <div class="cafe-fact">
+              <span class="cafe-fact-icon">🕐</span>
+              <div>
+                <strong>Horario</strong>
+                <span>Lun · Mar · Mié · Vie · Sáb · Dom: 07:00 – 22:00</span>
+                <span class="cafe-closed">Jueves: cerrado</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.app.goo.gl/idzRqS7mwHsRekkY8" target="_blank" rel="noopener" class="btn-maps">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            Cómo llegar
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Mapa Google -->
+      <div class="cafe-map" data-anim="fade-up">
+        <iframe
+          src="https://maps.google.com/maps?q=37.1349044,-3.5589204&output=embed&hl=es&z=18"
+          width="100%" height="380" style="border:0;" allowfullscreen
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Cafetería De Dulce"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── INSTAGRAM ── -->
+  <section id="instagram" class="section section-dark">
+    <div class="container">
+      <div class="insta-header" data-anim="fade-up">
+        <div class="insta-logo">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </div>
+        <div>
+          <h2 class="insta-title">@granadadedulce</h2>
+          <p class="insta-sub">Síguenos y descubre nuestras creaciones cada día</p>
+        </div>
+        <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-follow-btn">Seguir</a>
+      </div>
+    </div>
+
+    <!-- Grid de fotos -->
+    <div class="insta-grid">
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/sf-14.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/sf-2.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/tp-9.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/trad-8.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/sf-21.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/tp-13.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/bj-2.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+      <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-item">
+        <img src="assets/productos/sf-19.jpg" alt="Granada De Dulce Instagram" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="insta-footer" data-anim="fade-up">
+        <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="insta-cta">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Ver perfil completo en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section id="contacto" class="section section-cream">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Visítanos</span>
+        <h2>Ven a conocernos</h2>
+      </div>
+      <div class="contacto-grid">
+
+        <div class="contacto-card">
+          <div class="cc-icon">☕</div>
+          <h3>Cafetería De Dulce</h3>
+          <address>
+            <p>C/ Madrid, 36</p>
+            <p>Barrio de la Vega, Monachil</p>
+            <p>18193 Granada</p>
+          </address>
+          <a href="tel:958301855" class="cc-tel">958 301 855</a>
+          <div class="cc-horario">
+            <strong>Horario</strong>
+            <p class="placeholder-text">Añade tu horario aquí</p>
+          </div>
+        </div>
+
+        <div class="contacto-card">
+          <div class="cc-icon">🏭</div>
+          <h3>Obrador</h3>
+          <address>
+            <p>C/ Tejo, 12</p>
+            <p>Monachil</p>
+            <p>18193 Granada</p>
+          </address>
+          <a href="tel:958501118" class="cc-tel">958 501 118</a>
+          <a href="mailto:pedidos@franciscoarenas.com" class="cc-email">pedidos@franciscoarenas.com</a>
+        </div>
+
+        <div class="contacto-social">
+          <h3>Síguenos</h3>
+          <a href="https://instagram.com/granadadedulce" target="_blank" rel="noopener" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            @granadadedulce
+          </a>
+          <a href="https://facebook.com/GranadaDeDulce" target="_blank" rel="noopener" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            GranadaDeDulce
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FINANCIACIÓN UE ── -->
+  <div class="ue-banner">
+    <div class="ue-inner">
+      <img src="assets/logos-ue.svg" alt="Cofinanciado por la Unión Europea · Cámara de Comercio de Granada" class="ue-logos">
+      <p class="ue-text">
+        <strong>REPOSTERIA DE DULCE S.L.</strong> ha sido beneficiaria del Fondo Europeo de Desarrollo Regional cuyo objetivo es mejorar el uso y la calidad de las tecnologías de la información y de las comunicaciones y el acceso a las mismas, y gracias al que ha desarrollado <em>Informatización de Procesos de Trazabilidad, Pedidos, Facturación y Contabilidad</em>, para la mejora de la competitividad y productividad de la empresa. Esta acción ha tenido lugar durante el año 2021, con el apoyo del <strong>Programa Industria 4.0</strong> de la Cámara de Comercio de Granada.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-logo">Granada De Dulce</p>
+          <p class="footer-tagline">Artesanía dulce desde el corazón de Granada</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#filosofia">Nosotros</a>
+          <a href="#productos">Carta</a>
+          <a href="#catering">Catering</a>
+          <a href="#nuestra-cafeteria">Cafetería</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="tel:958301855">958 301 855</a>
+          <a href="tel:958501118">958 501 118</a>
+          <a href="mailto:pedidos@franciscoarenas.com">pedidos@franciscoarenas.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Granada De Dulce · Monachil, Granada · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE PRODUCTO -->
+  <div id="product-modal" class="pmodal" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="pmodal-backdrop"></div>
+    <div class="pmodal-box">
+      <button class="pmodal-close" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="pmodal-img">
+        <img id="pmodal-img" src="" alt="">
+      </div>
+      <div class="pmodal-info">
+        <span class="pmodal-cat" id="pmodal-cat"></span>
+        <h3 class="pmodal-name" id="pmodal-name"></h3>
+        <p class="pmodal-desc" id="pmodal-desc"></p>
+        <div class="pmodal-contact">
+          <p class="pmodal-contact-label">Pedidos e información</p>
+          <a href="tel:958501118" class="pmodal-tel">958 501 118</a>
+          <a href="mailto:pedidos@franciscoarenas.com" class="pmodal-email">pedidos@franciscoarenas.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP vía CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
