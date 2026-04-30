@@ -75,7 +75,30 @@ function initNavbar() {
 function initVideoScrub() {
   const canvas   = document.getElementById('hero-canvas');
   const fallback = document.getElementById('hero-fallback');
-  const ctx      = canvas.getContext('2d');
+  const isMobile = window.innerWidth < 768;
+
+  /* ── MÓVIL: vídeo en bucle como fondo normal, sin pin ni scrub ── */
+  if (isMobile) {
+    const videoEl = document.createElement('video');
+    videoEl.muted      = true;
+    videoEl.playsInline = true;
+    videoEl.autoplay   = true;
+    videoEl.loop       = true;
+    videoEl.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
+
+    videoEl.addEventListener('canplay', () => {
+      fallback.style.display = 'none';
+      document.getElementById('hero').insertBefore(videoEl, fallback);
+    });
+    videoEl.addEventListener('error', () => {
+      fallback.style.display = 'block';
+    });
+    videoEl.src = 'assets/hero.mp4';
+    return; /* salir — no hay pin ni canvas */
+  }
+
+  /* ── ESCRITORIO: efecto Apple scroll + canvas ── */
+  const ctx = canvas.getContext('2d');
 
   function resize() {
     canvas.width  = window.innerWidth;
@@ -96,7 +119,6 @@ function initVideoScrub() {
     ready = true;
     video.currentTime = 0;
 
-    /* Pin hero + avanzar vídeo con scroll */
     ScrollTrigger.create({
       trigger : '#hero',
       start   : 'top top',
@@ -114,12 +136,10 @@ function initVideoScrub() {
     });
   });
 
-  /* Dibuja el frame cada vez que el vídeo seekea */
   video.addEventListener('seeked', () => {
     if (ready) ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
   });
 
-  /* Sin vídeo → mantener fallback animado, sin pin */
   video.addEventListener('error', () => {
     canvas.style.display   = 'none';
     fallback.style.display = 'block';

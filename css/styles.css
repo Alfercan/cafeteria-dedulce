@@ -1460,6 +1460,26 @@ footer {
   .footer-contact { align-items: flex-start; }
 }
 
+@media (max-width: 768px) {
+  /* Hero en móvil: sección normal sin pin */
+  #hero {
+    height: 100svh; /* svh = small viewport height, evita el salto de la barra del navegador */
+    min-height: 600px;
+  }
+
+  .hero-content { padding: 0 1.5rem; }
+
+  .hero-location { font-size: 0.75rem; letter-spacing: 0.2em; margin-bottom: 1.25rem; }
+
+  .hero-title { font-size: clamp(3.25rem, 16vw, 5.5rem); margin-bottom: 1.25rem; }
+
+  .hero-sub { font-size: 0.875rem; letter-spacing: 0.08em; margin-bottom: 2rem; }
+
+  .hero-btn { padding: 0.875rem 2rem; font-size: 0.8125rem; }
+
+  .hero-scroll { bottom: 1.5rem; }
+}
+
 @media (max-width: 480px) {
-  .hero-title { font-size: clamp(3.5rem, 18vw, 5rem); }
+  .hero-title { font-size: clamp(2.75rem, 15vw, 4rem); }
 }
